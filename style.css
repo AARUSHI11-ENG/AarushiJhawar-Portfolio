@@ -544,3 +544,26 @@ button:hover,
         height: 200px;
     }
 }
+/* =========================
+   FIX HERO BUTTON OVERLAP (MOBILE)
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;              /* space between buttons */
+        width: 100%;
+    }
+
+    .hero-buttons button,
+    .hero-buttons a {
+        width: 100%;
+        max-width: 260px;       /* prevents stretching */
+        text-align: center;
+    }
+}
+
+
