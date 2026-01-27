@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarushi Jhawar | Portfolio</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <h2 class="logo">Aarushi Jhawar</h2>
+    <ul>
+        <li><button onclick="showPage('home')">Home</button></li>
+        <li><button onclick="showPage('about')">About</button></li>
+        <li><button onclick="showPage('projects')">Projects</button></li>
+        <li><button onclick="showPage('experiences')">Experiences</button></li>
+        <li><button onclick="showPage('contact-me')">Contact Me</button></li>
+    </ul>
+</nav>
+
+<div class="pages">
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <div class="hero">
+
+        <div class="hero-text animate">
+            <h1>Hello, I’m <span>Aarushi</span></h1>
+            <h3>AI & ML | Computer Science Undergraduate</h3>
+
+            <p>
+                Computer Science undergraduate specializing in Artificial Intelligence
+                and Machine Learning from SRM University Chennai, passionate about building
+                intelligent, scalable, and real-world software solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <button onclick="showPage('projects')">View Projects</button>
+                <a href="resume.pdf" target="_blank">Download Resume</a>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <h2>9.5</h2>
+                    <p>CGPA (1st Year)</p>
+                </div>
+                <div>
+                    <h2>9.8</h2>
+                    <p>Latest SGPA</p>
+                </div>
+                <div>
+                    <h2>2+</h2>
+                    <p>Internships</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image animate">
+            <div class="image-ring">
+                <img src="profile.jpeg" class="profile-pic" onclick="openImage()">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+    <div class="content-block animate">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a second-year Computer Science undergraduate specializing in
+            Artificial Intelligence and Machine Learning at SRM Institute of Science
+            and Technology, Chennai.
+        </p>
+        <p>
+            I have a strong foundation in Data Structures, Object-Oriented Programming,
+            and core computer science subjects with hands-on experience through projects
+            and internships.
+        </p>
+        <p>
+            I am a proactive learner with strong problem-solving abilities, adaptability,
+            and teamwork skills, actively seeking real-world challenges.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="page">
+    <h2 class="section-title animate">Projects</h2>
+
+    <div class="projects">
+
+        <div class="card animate">
+            <h3>Car Rental System</h3>
+            <p>Java-based system to manage car rentals.</p>
+            <p class="tech">Java · OOP</p>
+            <a href="https://github.com/AARUSHI11-ENG/Car-Rental-System"
+               target="_blank"
+               class="project-link">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="card animate">
+            <h3>Smart Calculator</h3>
+            <p>GUI-based calculator application.</p>
+            <p class="tech">Python</p>
+            <a href="https://github.com/AARUSHI11-ENG/Smart-Calculator"
+               target="_blank"
+               class="project-link">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="card animate">
+            <h3>Tic Tac Toe</h3>
+            <p>Logic-driven Java game.</p>
+            <p class="tech">Java</p>
+            <a href="https://github.com/AARUSHI11-ENG/TIC-TAC-TOE-GAME"
+               target="_blank"
+               class="project-link">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="card animate">
+            <h3>Vehicle Requisition System</h3>
+            <p>Industry internship project.</p>
+            <p class="tech">HTML · CSS · JS</p>
+            <p class="on-request">🔒 Code available upon request</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="page">
+    <div class="content-block animate">
+        <h2 class="section-title">Experiences</h2>
+
+        <div class="card">
+            <h3>AI & ML Intern – Orient Paper Mills</h3>
+            <p class="duration">Offline Internship</p>
+            <p>Worked on a real-time vehicle requisition system.</p>
+        </div>
+
+        <div class="card">
+            <h3>Finance Intern – Launched Global</h3>
+            <p class="duration">Online Internship</p>
+            <p>Gained exposure to finance operations and teamwork.</p>
+        </div>
+
+        <div class="card">
+            <h3>Technical Contributor – GSSOC 2025</h3>
+            <p class="duration">Open Source</p>
+            <p>Contributed to open-source projects.</p>
+        </div>
+
+        <div class="card">
+            <h3>Creator – Smartly Creator Program</h3>
+            <p class="duration">Selected Creator</p>
+            <p>Created and shared technical content.</p>
+        </div>
+
+        <h2 class="section-title certifications-title">Certifications</h2>
+
+        <div class="card">
+            <ul class="cert-list">
+                <li>NPTEL Java (75%)</li>
+                <li>Generative AI Certificate</li>
+                <li>HP AI Certificate</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT ME -->
+<section id="contact-me" class="page">
+    <div class="content-block animate">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>📍 Chennai, Tamil Nadu</p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:aarushijhawar75@gmail.com">aarushijhawar75@gmail.com</a>
+        </p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:aj1889@srmist.edu.in">aj1889@srmist.edu.in</a>
+        </p>
+
+        <p class="links">
+            <a href="https://www.linkedin.com/in/aarushi-jhawar-bb2143327/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <br>
+            <a href="https://github.com/AARUSHI11-ENG"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </p>
+
+        <!-- REVIEWS -->
+        <div class="reviews-section">
+            <h3 class="sub-title">Leave a Review</h3>
+
+            <form id="reviewForm" class="review-form">
+                <input type="text" id="reviewName" placeholder="Your Name" required>
+                <textarea id="reviewMessage" placeholder="Write your review..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+
+            <h3 class="sub-title">What People Say</h3>
+            <div id="reviewsList"></div>
+        </div>
+    </div>
+</section>
+
+</div>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
+    <img src="profile.jpeg" class="modal-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
